@@ -3,7 +3,9 @@ package Praktikum.Praktikum_4.de.hsruhrwest.oop.ss2025.abstraction.Aufgabe_2;
 public class Sphere {
     private double radius;
 
-    public Sphere() {}
+    public Sphere() {
+        this(1);
+    }
 
     public Sphere(double radius) {
         this.radius = radius;

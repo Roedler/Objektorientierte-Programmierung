@@ -5,7 +5,9 @@ public class Cuboid {
     private double width;
     private double height;
 
-    public Cuboid() {}
+    public Cuboid() {
+        this(1,1,1);
+    }
 
     public Cuboid(double length, double width, double height) {
         this.length = length;

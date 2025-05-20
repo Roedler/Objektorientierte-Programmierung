@@ -4,7 +4,9 @@ public class Cylinder {
     private double radius;
     private double height;
 
-    public Cylinder() {}
+    public Cylinder() {
+        this(1, 1);
+    }
 
     public Cylinder(double radius, double height) {
         this.radius = radius;
