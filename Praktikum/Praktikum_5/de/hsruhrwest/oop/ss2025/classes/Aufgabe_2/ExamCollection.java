@@ -6,9 +6,10 @@ public class ExamCollection {
     private int examCount;
 
     public ExamCollection(Exam[] exams) {
-        this.exams = new Exam[this.maxExams];
+        int maxExams = 100;
+        this.exams = new Exam[maxExams];
         this.examCount = 0;
-        for (int i = 0; i < exams.length && i < this.maxExams && exams[i] != null; i++) {
+        for (int i = 0; i < exams.length && exams[i] != null; i++) {
             this.exams[i] = exams[i];
             this.examCount++;
         }
