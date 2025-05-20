@@ -2,12 +2,13 @@ package Praktikum.Praktikum_5.de.hsruhrwest.oop.ss2025.classes.Aufgabe_2;
 
 public class ExamCollection {
     private Exam[] exams;
+    private final int maxExams = 100;
     private int examCount;
 
     public ExamCollection(Exam[] exams) {
-        this.exams = new Exam[100];
+        this.exams = new Exam[this.maxExams];
         this.examCount = 0;
-        for (int i = 0; i < exams.length && i < 100 && exams[i] != null; i++) {
+        for (int i = 0; i < exams.length && i < this.maxExams && exams[i] != null; i++) {
             this.exams[i] = exams[i];
             this.examCount++;
         }
@@ -22,9 +23,9 @@ public class ExamCollection {
     }
 
     public void setExams(Exam[] exams) {
-        this.exams = new Exam[100];
+        this.exams = new Exam[this.maxExams];
         this.examCount = 0;
-        for (int i = 0; i < exams.length && i < 100 && exams[i] != null; i++) {
+        for (int i = 0; i < exams.length && i < this.maxExams && exams[i] != null; i++) {
             this.exams[i] = exams[i];
             this.examCount++;
         }
