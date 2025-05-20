@@ -22,15 +22,6 @@ public class ExamCollection {
         return result;
     }
 
-    public void setExams(Exam[] exams) {
-        this.exams = new Exam[this.maxExams];
-        this.examCount = 0;
-        for (int i = 0; i < exams.length && i < this.maxExams && exams[i] != null; i++) {
-            this.exams[i] = exams[i];
-            this.examCount++;
-        }
-    }
-
     public int getPassedCount() {
         int count = 0;
         for (int i = 0; i < examCount; i++) {
