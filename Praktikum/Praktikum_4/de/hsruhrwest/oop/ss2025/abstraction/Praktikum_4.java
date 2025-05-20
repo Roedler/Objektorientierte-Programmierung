@@ -55,11 +55,11 @@ public class Praktikum_4 {
 
     public static void aufgabe_3_c() {
         ShoppingCart shoppingCart = new ShoppingCart(
-                "Cooler Warenkorb",
-                new CartItem("Apple", 0.5, 3),
-                new CartItem("Banana", 0.25, 10),
-                new CartItem("Pineapple", 1.1, 2),
-                new CartItem("Mango", 2.5, 1)
+            "Cooler Warenkorb",
+            new CartItem("Apple", 0.5, 3),
+            new CartItem("Banana", 0.25, 10),
+            new CartItem("Pineapple", 1.1, 2),
+            new CartItem("Mango", 2.5, 1)
         );
         System.out.println("Shopping cart:");
         System.out.println("Item count: " + shoppingCart.getItemCount());
