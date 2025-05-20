@@ -15,7 +15,7 @@ public class Praktikum_4 {
 //        aufgabe_3_a();  // cart item
 //        aufgabe_3_b();  // cart item total price
 //        aufgabe_3_c();  // shopping cart
-        aufgabe_4();    // employee
+//        aufgabe_4();    // employee
     }
 
     public static void aufgabe_2() {
