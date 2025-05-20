@@ -5,7 +5,7 @@ import java.time.LocalDate;
 class Payment {
     private long id;
     private Rental rental;
-    private double amount;
+    private double price;
     private LocalDate paymentDate;
     private String paymentMethod;
 }
