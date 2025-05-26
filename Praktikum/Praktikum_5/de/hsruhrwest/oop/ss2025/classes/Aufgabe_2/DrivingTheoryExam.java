@@ -9,7 +9,7 @@ public class DrivingTheoryExam extends Exam {
         super(name);
         this.errorPoints = new int[MAX_ERRORS];
         this.errorCount = 0;
-        for (int i = 0; i < MAX_ERRORS && errorPoints[i] != 0; i++) {
+        for (int i = 0; i < errorPoints.length && errorPoints[i] != 0; i++) {
             this.errorPoints[i] = errorPoints[i];
             this.errorCount++;
         }
