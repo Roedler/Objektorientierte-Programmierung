@@ -3,12 +3,13 @@ package Praktikum.Praktikum_5.de.hsruhrwest.oop.ss2025.classes.Aufgabe_2;
 public class DrivingTheoryExam extends Exam {
     private int[] errorPoints;
     private int errorCount;
+    private final int MAX_ERRORS = 100;
 
     public DrivingTheoryExam(String name, int[] errorPoints) {
         super(name);
-        this.errorPoints = new int[100];
+        this.errorPoints = new int[MAX_ERRORS];
         this.errorCount = 0;
-        for (int i = 0; i < errorPoints.length && i < 100 && errorPoints[i] != 0; i++) {
+        for (int i = 0; i < MAX_ERRORS && errorPoints[i] != 0; i++) {
             this.errorPoints[i] = errorPoints[i];
             this.errorCount++;
         }
@@ -23,9 +24,9 @@ public class DrivingTheoryExam extends Exam {
     }
 
     public void setErrorPoints(int[] errorPoints) {
-        this.errorPoints = new int[100];
+        this.errorPoints = new int[MAX_ERRORS];
         this.errorCount = 0;
-        for (int i = 0; i < errorPoints.length && i < 100 && errorPoints[i] != 0; i++) {
+        for (int i = 0; i < MAX_ERRORS && errorPoints[i] != 0; i++) {
             this.errorPoints[i] = errorPoints[i];
             this.errorCount++;
         }
