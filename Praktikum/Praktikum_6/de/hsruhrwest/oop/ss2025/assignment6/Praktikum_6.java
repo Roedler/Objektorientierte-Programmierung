@@ -2,12 +2,14 @@ package Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6;
 
 import Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_1.*;
 import Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_2.*;
+import Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_3.*;
 
 public class Praktikum_6 {
 
     public static void main(String[] args) {
 //        Aufgabe_1();
-        Aufgabe_2();
+//        Aufgabe_2();
+        Aufgabe_3();
     }
 
     public static void Aufgabe_1() {
@@ -53,5 +55,12 @@ public class Praktikum_6 {
         System.out.println("\nStrings umkehren:");
         Reverser reverser = new Reverser();
         reverser.transform(testStrings.clone());
+    }
+
+    public static void Aufgabe_3() {
+        var nodeA = new Node<String, Integer>("A", 5);
+        var nodeB = new Node<String, Integer>("B", 2, nodeA);
+        var nodeC = new Node<String, Integer>("C", 1, nodeB);
+        nodeC.print();
     }
 }
