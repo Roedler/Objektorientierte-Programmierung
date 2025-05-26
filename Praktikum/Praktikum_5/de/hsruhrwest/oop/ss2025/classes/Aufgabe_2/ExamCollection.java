@@ -67,6 +67,7 @@ public class ExamCollection {
         for (int i = 0; i < examCount; i++) {
             result.append(exams[i].toString()).append("\n");
         }
+        result.append("Geschriebene Prüfungen: ").append(getExams().length).append("\n");
         result.append("Bestandene Prüfungen: ").append(getPassedCount()).append("\n");
         result.append("Bestehensquote: ").append(String.format("%.2f%%", getPassRate())).append("\n");
         result.append("Führerscheinprüfungsversuche: ").append(getDrivingExamAttempts()).append("\n");
