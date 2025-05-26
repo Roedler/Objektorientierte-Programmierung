@@ -7,15 +7,16 @@ class PoliticalParty {
     private String chairperson;
     private String[] members;
     private int memberCount;
+    private final int MAX_MEMBERS = 100;
 
     public PoliticalParty(String name, String abbreviation, int foundedYear, String chairperson, String[] members) {
         this.name = name;
         this.abbreviation = abbreviation;
         this.foundedYear = foundedYear;
         this.chairperson = chairperson;
-        this.members = new String[100];
+        this.members = new String[MAX_MEMBERS];
         this.memberCount = 0;
-        for (int i = 0; i < members.length && i < 100 && members[i] != null; i++) {
+        for (int i = 0; i < MAX_MEMBERS && members[i] != null; i++) {
             this.members[i] = members[i];
             this.memberCount++;
         }
@@ -62,9 +63,9 @@ class PoliticalParty {
     }
 
     public void setMembers(String[] members) {
-        this.members = new String[100];
+        this.members = new String[MAX_MEMBERS];
         this.memberCount = 0;
-        for (int i = 0; i < members.length && i < 100 && members[i] != null; i++) {
+        for (int i = 0; i < MAX_MEMBERS && members[i] != null; i++) {
             this.members[i] = members[i];
             this.memberCount++;
         }
