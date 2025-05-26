@@ -15,9 +15,7 @@ public abstract class Exam {
         this.name = name;
     }
 
-    public boolean isPassed() {
-        return true;
-    }
+    public abstract boolean isPassed();
 
     @Override
     public String toString() {
