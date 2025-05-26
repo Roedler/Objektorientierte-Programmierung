@@ -44,7 +44,7 @@ public class Praktikum_6 {
     }
 
     public static void Aufgabe_2() {
-        String[] testStrings = {"Hallo Welt", " Hier sind ganz viele Leerzeichen enthalten, ", " Hier wird der String umgekehrt "};
+        String[] testStrings = {"Hallo Welt", " Hier sind ganz viele Leerzeichen enthalten. ", " Hier wird der String umgekehrt "};
 
         System.out.println("Leerzeichen entfernen:");
         SpaceRemover remover = new SpaceRemover();
