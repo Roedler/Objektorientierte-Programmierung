@@ -3,13 +3,15 @@ package Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6;
 import Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_1.*;
 import Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_2.*;
 import Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_3.*;
+import Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_4.*;
 
 public class Praktikum_6 {
 
     public static void main(String[] args) {
 //        Aufgabe_1();
 //        Aufgabe_2();
-        Aufgabe_3();
+//        Aufgabe_3();
+        Aufgabe_4();
     }
 
     public static void Aufgabe_1() {
@@ -62,5 +64,11 @@ public class Praktikum_6 {
         var nodeB = new Node<String, Integer>("B", 2, nodeA);
         var nodeC = new Node<String, Integer>("C", 1, nodeB);
         nodeC.print();
+    }
+
+    public static void Aufgabe_4() {
+        String[] words = {"Apfel", "Banane", "Apfel", "Orange", "Banane", "Banane", "Kiwi"};
+        Statistic<String> stats = Statistic.getArrayStatistic(words);
+        System.out.println(stats);
     }
 }
