@@ -5,10 +5,10 @@ import Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_1.*;
 public class Praktikum_6 {
 
     public static void main(String[] args) {
-        Aufgabe_6();
+        Aufgabe_1();
     }
 
-    public static void Aufgabe_6() {
+    public static void Aufgabe_1() {
         Spoon spoon = new Spoon("Holzlöffel", "Holz");
         System.out.println("Name: " + spoon.getName());
         System.out.println("Material: " + spoon.getMaterial());
