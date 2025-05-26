@@ -1,11 +1,13 @@
 package Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6;
 
 import Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_1.*;
+import Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_2.*;
 
 public class Praktikum_6 {
 
     public static void main(String[] args) {
-        Aufgabe_1();
+//        Aufgabe_1();
+        Aufgabe_2();
     }
 
     public static void Aufgabe_1() {
@@ -39,5 +41,17 @@ public class Praktikum_6 {
         Bowl bowl = new Bowl("Glasschale", 1.5);
         System.out.println("\nName: " + bowl.getName());
         System.out.println("Volumen: " + bowl.getVolume() + " Liter");
+    }
+
+    public static void Aufgabe_2() {
+        String[] testStrings = {"Hallo Welt", " OpenAI GPT ", "  Java Programmierung "};
+
+        System.out.println("Leerzeichen entfernen:");
+        AbstractStringTransformer remover = new SpaceRemover();
+        remover.transform(testStrings.clone());
+
+        System.out.println("\nStrings umkehren:");
+        AbstractStringTransformer reverser = new Reverser();
+        reverser.transform(testStrings.clone());
     }
 }
