@@ -47,11 +47,11 @@ public class Praktikum_6 {
         String[] testStrings = {"Hallo Welt", " OpenAI GPT ", "  Java Programmierung "};
 
         System.out.println("Leerzeichen entfernen:");
-        AbstractStringTransformer remover = new SpaceRemover();
+        SpaceRemover remover = new SpaceRemover();
         remover.transform(testStrings.clone());
 
         System.out.println("\nStrings umkehren:");
-        AbstractStringTransformer reverser = new Reverser();
+        Reverser reverser = new Reverser();
         reverser.transform(testStrings.clone());
     }
 }
