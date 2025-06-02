@@ -1,6 +1,6 @@
 package Praktikum.Praktikum_5.de.hsruhrwest.oop.ss2025.classes.Aufgabe_1;
 
-class PoliticalParty {
+public class PoliticalParty {
     private String name;
     private String abbreviation;
     private int foundedYear;
@@ -16,7 +16,7 @@ class PoliticalParty {
         this.chairperson = chairperson;
         this.members = new String[MAX_MEMBERS];
         this.memberCount = 0;
-        for (int i = 0; i < MAX_MEMBERS && members[i] != null; i++) {
+        for (int i = 0; i < members.length && members[i] != null; i++) {
             this.members[i] = members[i];
             this.memberCount++;
         }
@@ -65,7 +65,7 @@ class PoliticalParty {
     public void setMembers(String[] members) {
         this.members = new String[MAX_MEMBERS];
         this.memberCount = 0;
-        for (int i = 0; i < MAX_MEMBERS && members[i] != null; i++) {
+        for (int i = 0; i < members.length && members[i] != null; i++) {
             this.members[i] = members[i];
             this.memberCount++;
         }
