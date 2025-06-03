@@ -112,10 +112,5 @@ public class Praktikum_7 {
         set1.add(new Person("Bob"));
         set1.add(new Person("Bob"));
         System.out.println("Size of set: " + set1.size());
-
-        var set2 = new HashSet<PersonCorrected>();
-        set2.add(new PersonCorrected("Bob"));
-        set2.add(new PersonCorrected("Bob"));
-        System.out.println("Size of set: " + set2.size());
     }
 }

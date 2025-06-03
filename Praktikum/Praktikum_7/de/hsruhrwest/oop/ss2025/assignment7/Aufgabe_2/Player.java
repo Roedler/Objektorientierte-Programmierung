@@ -12,7 +12,7 @@ public class Player implements Comparable<Player> {
     public Player(String name, int score, Set<String> favoriteGames) {
         this.name = name;
         this.score = score;
-        this.favoriteGames = new HashSet<>(favoriteGames); // Defensive Kopie
+        this.favoriteGames = new HashSet<>(favoriteGames);
     }
 
     public String getName() {
