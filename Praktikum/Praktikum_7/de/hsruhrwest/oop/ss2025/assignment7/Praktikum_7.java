@@ -16,40 +16,21 @@ public class Praktikum_7 {
     }
 
     public static void Aufgabe_1_a() {
-        // Deklaration: Die Referenz object ist vom Typ Top, aber das tatsächliche Objekt ist vom Typ Middle.
-        // Konstruktor: Middle(5, 6) ruft Top(5, 6) auf, also ist left = 5 und right = 6.
-        // Dynamisches Binding: Bei object.getResult() wird die Methode getResult()
-        // der Klasse Middle aufgerufen, da das tatsächliche Objekt ein Middle-Objekt ist.
-        // Berechnung: In Middle gibt getResult() den Wert left - right = 5 - 6 = -1 zurück.
-        // Ausgabe: -1
-
         Top object = new Middle(5, 6);
         System.out.println(object.getResult());
+        // Ausgabe: -1
     }
 
     public static void Aufgabe_1_b() {
-        // Deklaration: Die Referenz object ist vom Typ Top, aber das tatsächliche Objekt ist vom Typ Bottom.
-        // Konstruktor: Bottom(5, 6) ruft Middle(5, 6) auf, welches wiederum Top(5, 6) aufruft, also ist left = 5
-        // und right = 6.
-        // Dynamisches Binding: Bei object.getResult() wird die Methode getResult() der Klasse Bottom aufgerufen,
-        // da das tatsächliche Objekt ein Bottom-Objekt ist.
-        // Berechnung: In Bottom gibt getResult() den Wert super.getLeft() * -1 zurück. super.getLeft() ruft
-        // getLeft() von Top auf, was 5 ergibt. Daher ist das Ergebnis 5 * -1 = -5.
-        // Ausgabe: -5
-
         Top object = new Bottom(5, 6);
         System.out.println(object.getResult());
+        // Ausgabe: -5
     }
 
     public static void Aufgabe_1_c() {
-        // Deklaration: Die Referenz object ist vom Typ Top, und das tatsächliche Objekt ist ebenfalls vom Typ Top.
-        // Konstruktor: Top(5, 6) setzt left = 5 und right = 6.
-        // Dynamisches Binding: Bei object.getResult() wird die Methode getResult() der Klasse Top aufgerufen, da das tatsächliche Objekt ein Top-Objekt ist.
-        // Berechnung: In Top gibt getResult() den Wert left + right = 5 + 6 = 11 zurück.
-        // Ausgabe: 11
-
         Top object = new Top(5, 6);
         System.out.println(object.getResult());
+        // Ausgabe: 11
     }
 
     public static void Aufgabe_2() {
