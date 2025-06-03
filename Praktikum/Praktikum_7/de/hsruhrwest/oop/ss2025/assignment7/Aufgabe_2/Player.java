@@ -45,10 +45,10 @@ public class Player implements Comparable<Player> {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Player player = (Player) o;
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        Player player = (Player) object;
         return score == player.score &&
                 Objects.equals(name, player.name) &&
                 Objects.equals(favoriteGames, player.favoriteGames);
