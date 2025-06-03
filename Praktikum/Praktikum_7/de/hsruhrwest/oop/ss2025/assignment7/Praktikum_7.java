@@ -2,8 +2,7 @@ package Praktikum.Praktikum_7.de.hsruhrwest.oop.ss2025.assignment7;
 
 import Praktikum.Praktikum_7.de.hsruhrwest.oop.ss2025.assignment7.Aufgabe_1.*;
 import Praktikum.Praktikum_7.de.hsruhrwest.oop.ss2025.assignment7.Aufgabe_2.*;
-import Praktikum.Praktikum_7.de.hsruhrwest.oop.ss2025.assignment7.Aufgabe_3.Person;
-import Praktikum.Praktikum_7.de.hsruhrwest.oop.ss2025.assignment7.Aufgabe_3.PersonCorrected;
+import Praktikum.Praktikum_7.de.hsruhrwest.oop.ss2025.assignment7.Aufgabe_3.*;
 
 import java.util.*;
 
