@@ -55,7 +55,7 @@ public class PersonStatistics {
             Person oldest = getOldestPerson();
             System.out.println("Youngest: " + youngest);
             System.out.println("Oldest: " + oldest);
-        } catch (Exception e) {
+        } catch (EmptyListException | NonUniquePersonFoundException e) {
             throw new CouldNotCreateStatisticException(e);
         }
     }

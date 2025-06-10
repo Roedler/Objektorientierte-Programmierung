@@ -7,10 +7,14 @@ import Praktikum.Praktikum_8.de.hsruhrwest.oop.ss2025.assignment8.Aufgabe_2.*;
 import java.util.List;
 
 public class Praktikum_8 {
-    public static void main(String[] args) throws CouldNotCreateStatisticException {
+    public static void main(String[] args) {
 //        Aufgabe_1();
 //        Aufgabe_2_b();
-        Aufgabe_2_c();
+        try {
+            Aufgabe_2_c();
+        } catch (CouldNotCreateStatisticException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static void Aufgabe_1() {
@@ -27,7 +31,7 @@ public class Praktikum_8 {
         // Geprüfte Ausnahmen (checked) werden zur Kompilierzeit geprüft und müssen abgefangen oder deklariert werden
         // (erben von Exception). Ungeprüfte Ausnahmen (unchecked) treten zur Laufzeit auf und müssen nicht behandelt
         // werden (erben von RuntimeException).
-        
+
         // Geprüfte: Klasse erbt von Exception.
         // Ungeprüfte: Klasse erbt von RuntimeException
 
@@ -43,16 +47,19 @@ public class Praktikum_8 {
         System.out.println("Person 2: " + person2);
     }
 
-    public static void Aufgabe_2_c() throws CouldNotCreateStatisticException {
+    public static void Aufgabe_2_c() throws CouldNotCreateStatisticException, IllegalArgumentException {
         Person person1 = new Person("Lennart", 23, Gender.MALE);
         Person person2 = new Person("Karina", 25, Gender.FEMALE);
-        Person person3 = new Person("Levin", 19, Gender.MALE);
+        Person person3 = new Person("Levin", 20, Gender.MALE);
         Person person4 = new Person("Hanna", 20, Gender.FEMALE);
 
         PersonStatistics statistics = new PersonStatistics(List.of(person1, person2, person3, person4));
 
-
-        statistics.printYoungestAndOldestPerson();
+        try {
+            statistics.printYoungestAndOldestPerson();
+        } catch (CouldNotCreateStatisticException | IllegalArgumentException e) {
+            System.err.println("Fehler beim Erstellen der Statistik: " + e.getMessage());
+        }
     }
 
 }
