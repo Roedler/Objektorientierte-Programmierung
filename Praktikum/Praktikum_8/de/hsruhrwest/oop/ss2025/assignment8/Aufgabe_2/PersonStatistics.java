@@ -15,11 +15,11 @@ public class PersonStatistics {
         }
         Person youngest = persons.getFirst();
         int count = 0;
-        for (Person p : persons) {
-            if (p.getAge() < youngest.getAge()) {
-                youngest = p;
+        for (Person person : persons) {
+            if (person.getAge() < youngest.getAge()) {
+                youngest = person;
                 count = 1;
-            } else if (p.getAge() == youngest.getAge()) {
+            } else if (person.getAge() == youngest.getAge()) {
                 count++;
             }
         }
@@ -35,11 +35,11 @@ public class PersonStatistics {
         }
         Person oldest = persons.getFirst();
         int count = 0;
-        for (Person p : persons) {
-            if (p.getAge() > oldest.getAge()) {
-                oldest = p;
+        for (Person person : persons) {
+            if (person.getAge() > oldest.getAge()) {
+                oldest = person;
                 count = 1;
-            } else if (p.getAge() == oldest.getAge()) {
+            } else if (person.getAge() == oldest.getAge()) {
                 count++;
             }
         }
