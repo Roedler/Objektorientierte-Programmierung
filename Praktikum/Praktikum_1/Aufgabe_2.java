@@ -1,8 +1,7 @@
-package Praktikum.Praktikum_1.Aufgaben;
+package Praktikum.Praktikum_1;
 
 public class Aufgabe_2 {
-    public static void main(String[] args) {
-        //		Scanner scanner = new Scanner(System.in);
+    public Aufgabe_2() {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
 
         System.out.print("Geben Sie die untere Grenze a ein (1 bis 10000): ");

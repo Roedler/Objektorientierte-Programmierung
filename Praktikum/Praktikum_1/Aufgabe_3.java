@@ -1,7 +1,7 @@
-package Praktikum.Praktikum_1.Aufgaben;
+package Praktikum.Praktikum_1;
 
 public class Aufgabe_3 {
-    public static void main(String[] args) {
+    public Aufgabe_3() {
         final double EUR_TO_USD = 1.10;
         final double EUR_TO_GBP = 0.85;
 
