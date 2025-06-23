@@ -1,5 +1,7 @@
 package Praktikum.Praktikum_1;
 
+import Praktikum.Praktikum_1.Aufgaben.*;
+
 public class Praktikum_1 {
     public static void main(String[] args) {
 //        Aufgabe_1.b_1();

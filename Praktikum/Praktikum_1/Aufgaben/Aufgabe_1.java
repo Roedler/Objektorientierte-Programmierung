@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_1;
+package Praktikum.Praktikum_1.Aufgaben;
 
 public class Aufgabe_1 {
     public static void b_1() {

@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_1;
+package Praktikum.Praktikum_1.Aufgaben;
 
 public class Aufgabe_2 {
     public Aufgabe_2() {
