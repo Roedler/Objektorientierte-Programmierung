@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_5.de.hsruhrwest.oop.ss2025.classes.Aufgabe_1;
+package Praktikum.Praktikum_5.Aufgaben.Aufgabe_1;
 
 class Student {
     private String id;

@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_5.de.hsruhrwest.oop.ss2025.classes.Aufgabe_2;
+package Praktikum.Praktikum_5.Aufgaben.Aufgabe_2;
 
 public class WrittenExam extends Exam {
     private int totalPoints;

@@ -1,7 +1,7 @@
-package Praktikum.Praktikum_5.de.hsruhrwest.oop.ss2025.classes;
+package Praktikum.Praktikum_5;
 
-import Praktikum.Praktikum_5.de.hsruhrwest.oop.ss2025.classes.Aufgabe_1.*;
-import Praktikum.Praktikum_5.de.hsruhrwest.oop.ss2025.classes.Aufgabe_2.*;
+import Praktikum.Praktikum_5.Aufgaben.Aufgabe_1.*;
+import Praktikum.Praktikum_5.Aufgaben.Aufgabe_2.*;
 
 public class Praktikum_5 {
     public static void main(String[] args) {
