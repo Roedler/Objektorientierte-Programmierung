@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_4.de.hsruhrwest.oop.ss2025.abstraction.Aufgabe_3;
+package Praktikum.Praktikum_4.Aufgaben.Aufgabe_3;
 
 public class ShoppingCart {
     private static final String DEFAULT_NAME = "Standard-Warenkorb";

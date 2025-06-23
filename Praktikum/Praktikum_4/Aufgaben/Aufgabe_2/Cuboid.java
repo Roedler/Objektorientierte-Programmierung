@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_4.de.hsruhrwest.oop.ss2025.abstraction.Aufgabe_2;
+package Praktikum.Praktikum_4.Aufgaben.Aufgabe_2;
 
 public class Cuboid {
     private double length;
@@ -6,7 +6,7 @@ public class Cuboid {
     private double height;
 
     public Cuboid() {
-        this(1,1,1);
+        this(1, 1, 1);
     }
 
     public Cuboid(double length, double width, double height) {

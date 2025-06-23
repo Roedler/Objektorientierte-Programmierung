@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_4.de.hsruhrwest.oop.ss2025.abstraction.Aufgabe_2;
+package Praktikum.Praktikum_4.Aufgaben.Aufgabe_2;
 
 public class Sphere {
     private double radius;

@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_4.de.hsruhrwest.oop.ss2025.abstraction.Aufgabe_4;
+package Praktikum.Praktikum_4.Aufgaben.Aufgabe_4;
 
 import java.time.LocalDate;
 

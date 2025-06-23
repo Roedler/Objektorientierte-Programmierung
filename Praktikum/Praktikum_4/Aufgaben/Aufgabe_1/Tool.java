@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_4.de.hsruhrwest.oop.ss2025.abstraction.Aufgabe_1;
+package Praktikum.Praktikum_4.Aufgaben.Aufgabe_1;
 
 class Tool {
     private long id;

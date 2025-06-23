@@ -1,13 +1,10 @@
-package Praktikum.Praktikum_4.de.hsruhrwest.oop.ss2025.abstraction;
+package Praktikum.Praktikum_4;
 
 import java.time.LocalDate;
-import Praktikum.Praktikum_4.de.hsruhrwest.oop.ss2025.abstraction.Aufgabe_2.Cuboid;
-import Praktikum.Praktikum_4.de.hsruhrwest.oop.ss2025.abstraction.Aufgabe_2.Cylinder;
-import Praktikum.Praktikum_4.de.hsruhrwest.oop.ss2025.abstraction.Aufgabe_2.Sphere;
-import Praktikum.Praktikum_4.de.hsruhrwest.oop.ss2025.abstraction.Aufgabe_3.CartItem;
-import Praktikum.Praktikum_4.de.hsruhrwest.oop.ss2025.abstraction.Aufgabe_3.CartItemTotalPrice;
-import Praktikum.Praktikum_4.de.hsruhrwest.oop.ss2025.abstraction.Aufgabe_3.ShoppingCart;
-import Praktikum.Praktikum_4.de.hsruhrwest.oop.ss2025.abstraction.Aufgabe_4.Employee;
+
+import Praktikum.Praktikum_4.Aufgaben.Aufgabe_2.*;
+import Praktikum.Praktikum_4.Aufgaben.Aufgabe_3.*;
+import Praktikum.Praktikum_4.Aufgaben.Aufgabe_4.*;
 
 public class Praktikum_4 {
     public static void main(String[] args) {
@@ -55,11 +52,11 @@ public class Praktikum_4 {
 
     public static void aufgabe_3_c() {
         ShoppingCart shoppingCart = new ShoppingCart(
-            "Cooler Warenkorb",
-            new CartItem("Apple", 0.5, 3),
-            new CartItem("Banana", 0.25, 10),
-            new CartItem("Pineapple", 1.1, 2),
-            new CartItem("Mango", 2.5, 1)
+                "Cooler Warenkorb",
+                new CartItem("Apple", 0.5, 3),
+                new CartItem("Banana", 0.25, 10),
+                new CartItem("Pineapple", 1.1, 2),
+                new CartItem("Mango", 2.5, 1)
         );
         System.out.println("Shopping cart:");
         System.out.println("Item count: " + shoppingCart.getItemCount());
@@ -68,7 +65,7 @@ public class Praktikum_4 {
         System.out.println("Item count: " + shoppingCart.getItemCount());
     }
 
-    public static void aufgabe_4 () {
+    public static void aufgabe_4() {
         Employee employee1 = new Employee("Lennart Novak", LocalDate.of(2002, 2, 19));
         Employee employee2 = new Employee("Karina Sturm", LocalDate.of(2000, 3, 27));
         Employee employee3 = new Employee("Elias Reich", LocalDate.of(2002, 12, 15));
