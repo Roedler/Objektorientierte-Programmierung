@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_7.de.hsruhrwest.oop.ss2025.assignment7.Aufgabe_1;
+package Praktikum.Praktikum_7.Aufgaben.Aufgabe_1;
 
 public class Bottom extends Middle {
     public Bottom(int left, int right) {

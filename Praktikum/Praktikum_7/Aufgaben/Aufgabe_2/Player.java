@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_7.de.hsruhrwest.oop.ss2025.assignment7.Aufgabe_2;
+package Praktikum.Praktikum_7.Aufgaben.Aufgabe_2;
 
 import java.util.HashSet;
 import java.util.Objects;
