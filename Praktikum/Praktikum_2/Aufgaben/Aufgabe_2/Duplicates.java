@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_2.Aufgaben.de.hsruhrwest.oop.ss2025.arrays;
+package Praktikum.Praktikum_2.Aufgaben.Aufgabe_2;
 
 import java.util.Random;
 
