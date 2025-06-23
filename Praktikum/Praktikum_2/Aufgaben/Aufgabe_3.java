@@ -91,9 +91,4 @@ public class Aufgabe_3 {
             System.out.println("Fehler: Ungültige Slot-Nummer!");
         }
     }
-
-    public static void main(String[] args) {
-        Aufgabe_3 inventory = new Aufgabe_3();
-        inventory.start();
-    }
 }

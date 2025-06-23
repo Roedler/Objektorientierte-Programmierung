@@ -4,6 +4,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Aufgabe_1 {
+
+    // =================================================================================================================
+    // Aufgabe 1 b
+    // =================================================================================================================
     public static void a() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Bitte geben Sie die Größe n des Arrays ein: ");
@@ -30,6 +34,9 @@ public class Aufgabe_1 {
         return result;
     }
 
+    // =================================================================================================================
+    // Aufgabe 1 b
+    // =================================================================================================================
     public static void b() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Bitte geben Sie die Größe n des n x n Arrays ein: ");
