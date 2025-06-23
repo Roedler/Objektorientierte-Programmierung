@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_8.de.hsruhrwest.oop.ss2025.assignment8.Aufgabe_2;
+package Praktikum.Praktikum_8.Aufgaben.Aufgabe_2;
 
 public class CouldNotCreateStatisticException extends Exception {
     public CouldNotCreateStatisticException(Throwable cause) {

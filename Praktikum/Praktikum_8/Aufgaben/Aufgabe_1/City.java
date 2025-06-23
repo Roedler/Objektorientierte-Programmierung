@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_8.de.hsruhrwest.oop.ss2025.assignment8.Aufgabe_1;
+package Praktikum.Praktikum_8.Aufgaben.Aufgabe_1;
 
 public enum City {
     BERLIN("Berlin", 3_669_491),
