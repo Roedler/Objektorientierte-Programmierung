@@ -1,7 +1,7 @@
-package Praktikum.Praktikum_9.de.hsruhrwest.oop.ss2025.assignment9;
+package Praktikum.Praktikum_9;
 
-import Praktikum.Praktikum_9.de.hsruhrwest.oop.ss2025.assignment9.Aufgabe_1.*;
-import Praktikum.Praktikum_9.de.hsruhrwest.oop.ss2025.assignment9.Aufgabe_2.*;
+import Praktikum.Praktikum_9.Aufgaben.Aufgabe_1.*;
+import Praktikum.Praktikum_9.Aufgaben.Aufgabe_2.*;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

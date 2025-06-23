@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_9.de.hsruhrwest.oop.ss2025.assignment9.Aufgabe_1;
+package Praktikum.Praktikum_9.Aufgaben.Aufgabe_1;
 
 import java.io.*;
 
