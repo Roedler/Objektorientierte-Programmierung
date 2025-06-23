@@ -1,9 +1,9 @@
-package Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6;
+package Praktikum.Praktikum_6;
 
-import Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_1.*;
-import Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_2.*;
-import Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_3.*;
-import Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_4.*;
+import Praktikum.Praktikum_6.Aufgaben.Aufgabe_1.*;
+import Praktikum.Praktikum_6.Aufgaben.Aufgabe_2.*;
+import Praktikum.Praktikum_6.Aufgaben.Aufgabe_3.*;
+import Praktikum.Praktikum_6.Aufgaben.Aufgabe_4.*;
 
 public class Praktikum_6 {
 

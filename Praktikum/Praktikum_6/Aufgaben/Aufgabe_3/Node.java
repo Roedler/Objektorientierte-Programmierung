@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_3;
+package Praktikum.Praktikum_6.Aufgaben.Aufgabe_3;
 
 public class Node<T, N extends Number> {
 

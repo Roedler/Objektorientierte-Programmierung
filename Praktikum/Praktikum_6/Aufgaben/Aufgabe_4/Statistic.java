@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_4;
+package Praktikum.Praktikum_6.Aufgaben.Aufgabe_4;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_2;
+package Praktikum.Praktikum_6.Aufgaben.Aufgabe_2;
 
 public class Reverser extends AbstractStringTransformer {
 

@@ -1,4 +1,4 @@
-package Praktikum.Praktikum_6.de.hsruhrwest.oop.ss2025.assignment6.Aufgabe_1;
+package Praktikum.Praktikum_6.Aufgaben.Aufgabe_1;
 
 public class Blender extends KitchenDevice implements Electronic, DangerousDevice {
     private int bladeSpeed;
