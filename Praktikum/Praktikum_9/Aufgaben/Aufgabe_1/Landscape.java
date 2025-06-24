@@ -1,22 +1,39 @@
 package Praktikum.Praktikum_9.Aufgaben.Aufgabe_1;
 
 import java.io.*;
-
 import java.nio.file.Paths;
 
+/**
+ * The Landscape class models a rectangular grid of tiles.
+ */
 public class Landscape {
 
+    /**
+     * Enum representing the types of tiles that can be placed in the landscape.
+     */
     public enum Tile {
-        SOIL,
-        WATER,
-        BEACH
+        SOIL,   // Represents soil terrain
+        WATER,  // Represents water terrain
+        BEACH   // Represents beach terrain
     }
 
+    /**
+     * The absolute path to the directory containing landscape files.
+     */
     public final static String ABSOLUTE_PATH = Paths.get("").toAbsolutePath() + "/Praktikum/Praktikum_9/de/hsruhrwest/oop/ss2025/assignment9/Aufgabe_1/";
-    private final int width;
-    private final int height;
-    private final Tile[][] tiles;
 
+    private final int width;    // The width of the landscape grid
+    private final int height;   // The height of the landscape grid
+    private final Tile[][] tiles; // 2D array storing the tiles of the landscape
+
+    /**
+     * Constructs a new Landscape with the specified width and height.
+     * All tiles are initialized to WATER by default.
+     *
+     * @param width  The width of the landscape (must be positive).
+     * @param height The height of the landscape (must be positive).
+     * @throws IllegalArgumentException If width or height is less than or equal to zero.
+     */
     public Landscape(int width, int height) {
         if (width <= 0 || height <= 0) {
             throw new IllegalArgumentException("Breite und Höhe müssen positive Werte sein.");
@@ -31,14 +48,32 @@ public class Landscape {
         }
     }
 
+    /**
+     * Returns the width of the landscape.
+     *
+     * @return The width of the landscape grid.
+     */
     public int getWidth() {
         return width;
     }
 
+    /**
+     * Returns the height of the landscape.
+     *
+     * @return The height of the landscape grid.
+     */
     public int getHeight() {
         return height;
     }
 
+    /**
+     * Sets the tile at the specified position in the landscape.
+     *
+     * @param x    The x-coordinate of the tile (0-based index).
+     * @param y    The y-coordinate of the tile (0-based index).
+     * @param tile The tile type to set (must not be null).
+     * @throws IllegalArgumentException If the coordinates are out of bounds or the tile is null.
+     */
     public void setTile(int x, int y, Tile tile) {
         if (x < 0 || x >= width || y < 0 || y >= height) {
             throw new IllegalArgumentException("Ungültige Koordinaten: (" + x + ", " + y + "). Sie müssen innerhalb [0, " + (width - 1) + "] für x und [0, " + (height - 1) + "] für y liegen.");
@@ -49,6 +84,14 @@ public class Landscape {
         this.tiles[y][x] = tile;
     }
 
+    /**
+     * Retrieves the tile at the specified position in the landscape.
+     *
+     * @param x The x-coordinate of the tile (0-based index).
+     * @param y The y-coordinate of the tile (0-based index).
+     * @return The tile type at the specified position.
+     * @throws IllegalArgumentException If the coordinates are out of bounds.
+     */
     public Tile getTile(int x, int y) {
         if (x < 0 || x >= width || y < 0 || y >= height) {
             throw new IllegalArgumentException("Ungültige Koordinaten: (" + x + ", " + y + "). Sie müssen innerhalb [0, " + (width - 1) + "] für x und [0, " + (height - 1) + "] für y liegen.");
@@ -56,6 +99,14 @@ public class Landscape {
         return this.tiles[y][x];
     }
 
+    /**
+     * Writes the landscape to the specified output stream in a specific format.
+     * The format includes a header ("landscape" line), dimensions (width x height), and the tile grid.
+     *
+     * @param landscape The landscape to write.
+     * @param out       The output stream to write to.
+     * @throws IOException If an I/O error occurs during writing.
+     */
     public void writeLandscape(Landscape landscape, OutputStream out) throws IOException {
         PrintWriter writer = new PrintWriter(new OutputStreamWriter(out));
         writer.println("landscape");
@@ -74,6 +125,16 @@ public class Landscape {
         writer.flush();
     }
 
+    /**
+     * Reads a landscape from the specified input stream.
+     * The input must follow the format: a "landscape" header, dimensions (width x height),
+     * and the tile grid with specific characters for each tile type.
+     *
+     * @param in The input stream to read from.
+     * @return A new Landscape object constructed from the input.
+     * @throws IOException            If an I/O error occurs during reading.
+     * @throws InvalidFormatException If the input format is invalid.
+     */
     public static Landscape readLandscape(InputStream in) throws IOException, InvalidFormatException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 
@@ -122,6 +183,12 @@ public class Landscape {
         return landscape;
     }
 
+    /**
+     * Returns a string representation of the landscape.
+     * Each tile is represented by a character: 'X' for SOIL, '~' for WATER, '.' for BEACH.
+     *
+     * @return A string representing the landscape grid.
+     */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
