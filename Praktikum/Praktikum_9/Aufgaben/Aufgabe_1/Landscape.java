@@ -20,7 +20,7 @@ public class Landscape {
     /**
      * The absolute path to the directory containing landscape files.
      */
-    public final static String ABSOLUTE_PATH = Paths.get("").toAbsolutePath() + "/Praktikum/Praktikum_9/de/hsruhrwest/oop/ss2025/assignment9/Aufgabe_1/";
+    public final static String ABSOLUTE_PATH = Paths.get("").toAbsolutePath() + "/Praktikum/Praktikum_9/Aufgaben/Aufgabe_1/";
 
     private final int width;    // The width of the landscape grid
     private final int height;   // The height of the landscape grid
