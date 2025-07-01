@@ -18,7 +18,6 @@ public class Vorlesung_12 {
         );
 
         double averageGrade = students.stream()
-                .filter(s -> s.getGrade() >= 0 && s.getGrade() <= 100)
                 .mapToInt(Student::getGrade)
                 .average()
                 .orElse(0.0);
